@@ -1,95 +1,253 @@
-# 🔥Build a Stunning Fashion Studio Website with React JS [ Locomotive Scroll + GSAP + Framer Motion ]
+# 🎬 XƯỞNG ART PRODUCTION
 
-![GitHub stars](https://img.shields.io/github/stars/codebucks27/wibe-studio-starter-files?style=social&logo=ApacheSpark&label=Stars)&nbsp;&nbsp;
-![GitHub forks](https://img.shields.io/github/forks/codebucks27/wibe-studio-starter-files?style=social&logo=KashFlow&&label=Forks)&nbsp;&nbsp;
-![Github Followers](https://img.shields.io/github/followers/codebucks27.svg?style=social&label=Follow)&nbsp;&nbsp;<br />
+![Next.js](https://img.shields.io/badge/Next.js-14.2.5-black?style=for-the-badge&logo=next.js)
+![React](https://img.shields.io/badge/React-18.3.1-blue?style=for-the-badge&logo=react)
+![Framer Motion](https://img.shields.io/badge/Framer%20Motion-11.2.6-purple?style=for-the-badge&logo=framer)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.4.10-38B2AC?style=for-the-badge&logo=tailwind-css)
+![Strapi](https://img.shields.io/badge/Strapi-CMS-2F2E8B?style=for-the-badge&logo=strapi)
 
-This repository contains final code for Fashion Studio Website in ReactJS. <br />
+> **Website portfolio chuyên nghiệp cho studio sản xuất video: TVC, Music Video, Documentary**
 
-View Demo👇: <br />
-https://wibe-studio.netlify.app/ <br />
+## ✨ Tính năng nổi bật
 
-checkout following **Tutorial** to learn👇: <br />
-<a href="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap" target="_blank">🔥Build a Stunning Fashion Studio Website with React JS</a> ![YouTube Video Views](https://img.shields.io/youtube/views/Ra1Fsa9YJCk?style=social) </br >
+### 🎯 Frontend (Next.js)
+- **Hero Section** với video background autoplay và animation chữ clip-mask
+- **Featured Projects** với masonry grid và hover preview video
+- **Custom Cursor** với hiệu ứng hover động
+- **Page Transitions** mượt mà với Framer Motion
+- **Responsive Design** tối ưu cho mọi thiết bị
+- **Scroll Animations** với reveal effects
 
-[![YouTube Video Views](https://img.shields.io/youtube/views/Ra1Fsa9YJCk?style=social)](https://youtu.be/Ra1Fsa9YJCk)<br />
+### 🎨 Design System
+- **Màu sắc chủ đạo**: 
+  - Đỏ: `#D0232E` (Primary)
+  - Xanh: `#00673A` (Secondary) 
+  - Vàng: `#FFD200` (Accent)
+- **Typography**: SF Pro Display, Gilroy, iCiel Samsung
+- **Modern UI/UX** với gradient overlays và smooth transitions
 
+### 🔧 Backend (Strapi CMS)
+- **Content Management** cho projects, articles, services
+- **Media Library** quản lý video và hình ảnh
+- **API Endpoints** RESTful cho frontend
+- **Custom Lifecycles** cho project management
 
-### Images of The Fashion Studio Website:
-![HOME](https://github.com/codebucks27/wibe-studio-starter-files/blob/main/Wibe-Home-Desktop.png)
-![ABOUT](https://github.com/codebucks27/wibe-studio-starter-files/blob/main/Wibe-About-Desktop.png)
-![HOME](https://github.com/codebucks27/wibe-studio-starter-files/blob/main/Wibe-Home-Moblie.png)
-![ABOUT](https://github.com/codebucks27/wibe-studio-starter-files/blob/main/Wibe-About-Mobile.png)
+## 🚀 Cài đặt và chạy dự án
 
+### Yêu cầu hệ thống
+- Node.js >= 18.0.0
+- npm hoặc yarn
+- Git
 
-### Resources Used in This Project
+### 1. Clone repository
+```bash
+git clone https://github.com/hunkmik3/XuongArtProduction.git
+cd XuongArtProduction
+```
 
-Fonts: https://fontsource.org/ <br />
+### 2. Cài đặt dependencies
 
-### External Libraries used in this project: 
+**Frontend:**
+```bash
+npm install
+```
 
-[styled-components](https://styled-components.com/docs/advanced) <br />
-[GSAP](https://greensock.com/gsap/) <br />
-[Framer-mMtion](https://www.framer.com/motion/) <br />
-[React-Locomotive-Scroll](https://www.npmjs.com/package/react-locomotive-scroll) <br />
-[Locomotive-Scroll](https://www.npmjs.com/package/locomotive-scroll) <br />
+**Backend (Strapi):**
+```bash
+cd backend
+npm install
+```
 
-### All The Resources Used in This Website Are from👇:
+### 3. Chạy dự án
 
-Walking Girl Video:<br />
-Video by cottonbro from Pexels [https://www.pexels.com/@cottonbro]<br />
+**Development mode:**
+```bash
+# Terminal 1 - Frontend
+npm run dev
 
-Images:<br />
+# Terminal 2 - Backend
+cd backend
+npm run develop
+```
 
-Ring: Photo by Arif Syuhada from Pexels<br />
-https://www.pexels.com/@arifsyd15<br />
+**Production build:**
+```bash
+# Build frontend
+npm run build
+npm start
 
-Rings: Photo by cottonbro from Pexels<br />
-https://www.pexels.com/@cottonbro<br />
+# Build backend
+cd backend
+npm run build
+npm start
+```
 
-Earings: Photo by say straight from Pexels<br />
-https://www.pexels.com/@say-straight-1400349<br />
+## 📁 Cấu trúc dự án
 
-White Tee:Photo by cottonbro from Pexels<br />
-https://www.pexels.com/@cottonbro<br />
+```
+XuongArtProduction/
+├── app/                          # Next.js App Router
+│   ├── (site)/                   # Public pages
+│   │   ├── about/               # Giới thiệu
+│   │   ├── works/               # Portfolio projects
+│   │   ├── services/            # Dịch vụ
+│   │   ├── journal/             # Blog/Articles
+│   │   └── contact/             # Liên hệ
+│   ├── components/              # Reusable components
+│   │   ├── ClientMotion.js      # Framer Motion wrappers
+│   │   ├── VideoPlayer.js       # Video player component
+│   │   └── MotionProvider.js    # Motion context
+│   ├── lib/                     # Utilities
+│   │   └── strapi.js           # Strapi API client
+│   └── globals.css             # Global styles
+├── backend/                     # Strapi CMS
+│   ├── src/
+│   │   ├── api/                # API endpoints
+│   │   │   ├── project/        # Project management
+│   │   │   ├── article/        # Blog articles
+│   │   │   ├── service/        # Services
+│   │   │   └── team-member/    # Team members
+│   │   ├── components/         # Strapi components
+│   │   └── extensions/         # Custom extensions
+│   └── config/                 # Strapi configuration
+├── public/                     # Static assets
+│   ├── images/                # Images
+│   └── videos/                # Video files
+└── src/                       # Legacy React components (if any)
+```
 
-black t-shirt girl: Photo by Lena Hsvl from Pexels<br />
-https://www.pexels.com/@lenaneva<br />
+## 🎬 Tính năng chi tiết
 
-Red girl: Photo by Yaroslava Borz from Pexels<br />
-https://www.pexels.com/@yaroslava-borz-126286496<br />
+### Hero Section
+- Video background với autoplay, muted, loop
+- Typography animation với clip-mask effect
+- Scroll indicator với animation
+- Sticky header khi scroll
 
-Ethnic Wear: Photo by Artem Beliaikin from Pexels<br />
-https://www.pexels.com/@belart84<br />
+### Project Showcase
+- Masonry grid layout
+- Hover video preview
+- Category tags
+- Smooth scroll animations
+- Custom cursor effects
 
-Suit: Photo by Chloe from Pexels<br />
-https://www.pexels.com/@chloekalaartist<br />
+### Content Management
+- **Projects**: Quản lý portfolio với video, hình ảnh, metadata
+- **Articles**: Blog system với rich text editor
+- **Services**: Danh sách dịch vụ
+- **Team Members**: Thông tin team
 
-cap male: Photo by cottonbro from Pexels<br />
-https://www.pexels.com/@cottonbro<br />
+## 🛠️ Công nghệ sử dụng
 
-Watches: Photo by Mister Mister from Pexels<br />
-https://www.pexels.com/@bemistermister<br />
+### Frontend
+- **Next.js 14** - React framework với App Router
+- **Framer Motion** - Animation library
+- **Tailwind CSS** - Utility-first CSS framework
+- **HLS.js** - Video streaming
 
-Denim: Photo by Denis Zagorodniuc from Pexels<br />
-https://www.pexels.com/@imdennyz<br />
+### Backend
+- **Strapi** - Headless CMS
+- **Node.js** - Runtime environment
+- **SQLite/PostgreSQL** - Database
 
-Jacket: Photo by Simon Robben from Pexels<br />
-https://www.pexels.com/@simon-robben-55958<br />
+### Development Tools
+- **ESLint** - Code linting
+- **PostCSS** - CSS processing
+- **Autoprefixer** - CSS vendor prefixes
 
-Yellow T-shirt:Photo by RAUL REYNOSO from Pexels<br />
-https://www.pexels.com/@raulkingr<br />
+## 📱 Responsive Design
 
-Yellow Dress: Photo by Godisable Jacob from Pexels<br />
-https://www.pexels.com/@godisable-jacob-226636<br />
+- **Mobile First** approach
+- **Breakpoints**: sm (640px), md (768px), lg (1024px), xl (1280px)
+- **Touch-friendly** interactions
+- **Optimized images** với Next.js Image component
 
+## 🎨 Customization
 
+### Màu sắc
+Chỉnh sửa trong `app/globals.css`:
+```css
+:root {
+  --primary: #D0232E;
+  --secondary: #00673A;
+  --accent: #FFD200;
+}
+```
 
-### Famous Quotes Used:
-"Fashion is the armour to survive the reality of everyday life."<br />
--- bill cunningham
+### Fonts
+Cập nhật trong `app/globals.css`:
+```css
+:root {
+  --font-heading: "SF Pro Display", "Gilroy", sans-serif;
+  --font-body: "SF Pro Display", sans-serif;
+  --font-accent: "iCiel Samsung", "Sharp Sans", sans-serif;
+}
+```
 
-"One is never over-dressed or under-dressed with a Little Black Dress." —Karl Lagerfeld<br />
+## 🚀 Deployment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Vercel (Recommended)
+```bash
+# Install Vercel CLI
+npm i -g vercel
 
+# Deploy
+vercel
+```
+
+### Netlify
+```bash
+# Build
+npm run build
+
+# Deploy to Netlify
+# Upload dist folder to Netlify
+```
+
+### Strapi Backend
+- **Railway**: Easy deployment với database
+- **Heroku**: Với PostgreSQL addon
+- **DigitalOcean**: VPS deployment
+
+## 📄 API Documentation
+
+### Endpoints
+- `GET /api/projects` - Lấy danh sách projects
+- `GET /api/projects/:id` - Lấy project theo ID
+- `GET /api/articles` - Lấy danh sách articles
+- `GET /api/services` - Lấy danh sách services
+- `GET /api/team-members` - Lấy danh sách team members
+
+### Query Parameters
+- `populate=*` - Populate all relations
+- `filters[category][$eq]=TVC` - Filter by category
+- `sort=createdAt:desc` - Sort by creation date
+
+## 🤝 Contributing
+
+1. Fork repository
+2. Tạo feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
+5. Tạo Pull Request
+
+## 📞 Liên hệ
+
+- **Email**: hungmai16.work@gmail.com
+- **GitHub**: [@hunkmik3](https://github.com/hunkmik3)
+- **Website**: [Xưởng Art Production](https://github.com/hunkmik3/XuongArtProduction)
+
+## 📝 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## 🙏 Acknowledgments
+
+- [Next.js](https://nextjs.org/) - React framework
+- [Strapi](https://strapi.io/) - Headless CMS
+- [Framer Motion](https://www.framer.com/motion/) - Animation library
+- [Tailwind CSS](https://tailwindcss.com/) - CSS framework
+
+---
+
+**Made with ❤️ by [hunkmik3](https://github.com/hunkmik3)**
