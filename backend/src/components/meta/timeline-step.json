@@ -1,0 +1,11 @@
+{
+  "collectionName": "components_meta_timeline_steps",
+  "info": { "displayName": "timelineStep" },
+  "attributes": {
+    "title": { "type": "string" },
+    "description": { "type": "text" },
+    "order": { "type": "integer" }
+  }
+}
+
+

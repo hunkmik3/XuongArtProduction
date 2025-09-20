@@ -1,0 +1,26 @@
+{
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "slug": { "type": "uid", "targetField": "title", "required": true },
+    "description": { "type": "richtext" },
+    "category": { "type": "enumeration", "enum": ["TVC", "Music Video", "Documentary"] },
+    "poster": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "video": { "type": "media", "multiple": false, "allowedTypes": ["videos"] },
+    "hls": { "type": "string" },
+    "gallery": { "type": "media", "multiple": true, "allowedTypes": ["images"] },
+    "process": { "type": "component", "repeatable": true, "component": "meta.timeline-step" },
+    "credits": { "type": "component", "repeatable": true, "component": "meta.credit-item" },
+    "year": { "type": "integer" }
+  }
+}
+
+
