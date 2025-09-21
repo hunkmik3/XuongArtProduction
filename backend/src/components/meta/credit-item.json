@@ -1,0 +1,10 @@
+{
+  "collectionName": "components_meta_credit_items",
+  "info": { "displayName": "creditItem" },
+  "attributes": {
+    "role": { "type": "string" },
+    "name": { "type": "string" }
+  }
+}
+
+

@@ -1,0 +1,14 @@
+{
+  "collectionName": "team_members",
+  "info": { "singularName": "team-member", "pluralName": "team-members", "displayName": "TeamMember" },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "name": { "type": "string", "required": true },
+    "role": { "type": "string" },
+    "avatar": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "bio": { "type": "text" },
+    "socials": { "type": "component", "repeatable": true, "component": "meta.social-link" }
+  }
+}
+
+
